@@ -8,9 +8,9 @@ L'algoritmo di cifratura rientra nei cifrari a sostituzione monoalfabetica e rap
 
 <h2>FUNZIONAMENTO</h2>
 
-Esso basa il proprio funzionamento su una chiave, simmetrica, detta <i>Verme</i>. Questa stringa, ricevuta in input dall'utente, viene inizialmente modificata, in modo da presentare la stessa lunghezza del messaggio che si intende cifrare. Ad esempio, se il messaggio da cifrare è 'ciao', e il Verme è 'ab', questo verrà ripetuto, diventando 'abab'.
+Esso basa il proprio funzionamento su una chiave simmetrica, detta <i>Verme</i>. Questa stringa, ricevuta in input dall'utente, viene inizialmente modificata, in modo da presentare la stessa lunghezza del messaggio che si intende cifrare. Ad esempio, se il messaggio da cifrare è 'ciao', e il Verme è 'ab', questo verrà ripetuto diventando 'abab'.
 
-Dopo aver stabilito la Chiave vengono eseguite una serie di iterazioni, ognuna delle quali prende in esame un singolo carattere del messaggio da cifrare. Viene calcolato l'<i>Offset</i> di ogni carattere appartenente alla Chiave, ad esempio quello del carattere "e" corrisponde a 5, quello del carattere "b" a 1; al carattere del messaggio dell'iterazione corrente, viene quindi sommato l'Offset del carattere del Verme avente lo stesso indice.
+Dopo aver stabilito la Chiave vengono eseguite una serie di iterazioni, ognuna delle quali prende in esame un singolo carattere del messaggio da cifrare. Viene calcolato l'<i>Offset</i> di ogni carattere appartenente alla Chiave, ad esempio quello del carattere "e" corrisponde a 5, mentre quello del carattere "b" a 1; al carattere del messaggio dell'iterazione corrente, viene quindi sommato l'Offset del carattere del Verme avente lo stesso indice.
 
 Esempio:
 
